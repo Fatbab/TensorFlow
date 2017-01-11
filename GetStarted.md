@@ -18,7 +18,7 @@ python -m tensorflow.models.image.mnist.convolutional
 
 It should starts loading the sample data and running the classification in 100-batch steps. But what's actually happening?
 
-##Peeling one layer off
+##Peeling off one layer
 Here, we see how the above classification is actually done. The full description is available at the [TensorFlow](https://www.tensorflow.org/tutorials/mnist/beginners/) project webpage.
 We will be implementing:  y = softmax(Wx+b)
 
