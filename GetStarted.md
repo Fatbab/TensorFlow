@@ -56,6 +56,6 @@ print(sess.run(accuracy, feed_dict={x: mnist.test.images, y: mnist.test.labels})
   Intuitively speaking, it is the log-liklihood for data y'_i_ under model y_i. [This page](http://datascience.stackexchange.com/questions/9302/the-cross-entropy-error-function-in-neural-networks) has a good walkthrough of how the formula is derived. 
   The notion of cross_entropy here works as our cost function.    
 
-3. tf.argmax(): This function gives the index of highest entry in tensor along some axis. So tf.argmax(y,1) is the label that the model thinks is most likely for each input while tf.argmax(y',1) is the actual label.
+3. `tf.argmax()`: This function gives the index of highest entry in tensor along some axis. So `tf.argmax(y,1)` is the label that the model thinks is most likely for each input while `tf.argmax(y',1)` is the actual label.
 
-4. tf.equal returns binary {0, 1} values and that makes defining accuracy as simple as means of the equal output. 
+4. `tf.equal` returns binary {0, 1} values and that makes defining accuracy as simple as means of the `tf.equal` output. 
