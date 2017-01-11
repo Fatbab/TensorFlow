@@ -53,7 +53,7 @@ print(sess.run(accuracy, feed_dict={x: mnist.test.images, y: mnist.test.labels})
 1. Entropy: First, remember the Shannon Entropy from Information Theory defined as _the expected value of information contained in every bit/message_. See the mathematical representation [here.](https://en.wikipedia.org/wiki/Entropy_(information_theory)#Definition) 
 2. Cross Entropy:
   Intuitively speaking, it is the log-liklihood for data y'_i under model y_i. [This page](http://datascience.stackexchange.com/questions/9302/the-cross-entropy-error-function-in-neural-networks) has a good walkthrough of how the formula is derived. 
-  The notion of cross_entropy here works as our cost function. [This is a very nice tutorial on Cross Entropy.](http://neuralnetworksanddeeplearning.com/chap3.html)   
+  The notion of cross_entropy here works as our cost function. [This is a very nice tutorial on Cross Entropy as Cost Function.](http://neuralnetworksanddeeplearning.com/chap3.html)   
 
 3. `tf.argmax()`: This function gives the index of highest entry in tensor along some axis. So `tf.argmax(y,1)` is the label that the model thinks is most likely for each input while `tf.argmax(y',1)` is the actual label.
 
