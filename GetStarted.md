@@ -57,3 +57,5 @@ print(sess.run(accuracy, feed_dict={x: mnist.test.images, y: mnist.test.labels})
   The notion of cross_entropy here works as our cost function.    
 
 3. tf.argmax(): This function gives the index of highest entry in tensor along some axis. So tf.argmax(y,1) is the label that the model thinks is most likely for each input while tf.argmax(y',1) is the actual label.
+
+4. tf.equal returns binary {0, 1} values and that makes defining accuracy as simple as means of the equal output. 
